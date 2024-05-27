@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studenti</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1000px;
+            height: 150px;
+            margin: 50px 50px 0px 50px;
+            background-color: rgb(90, 1, 1);
+            padding: 50px;
+            
+        }
+        .studenti img{
+            width: 400px;
+            margin-left: 300px;      
+        }
+        .studenti img:hover{
+            border: 10px double lightcoral;
+        }
+        h1{
+            font-family: sans-serif;
+            font-size: 42px;
+            color: lightyellow;
+        }
+        table{
+            width: 1000px;
+            color: lightyellow;
+            font-family: sans-serif;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        table a{
+            color:lightyellow;
+            transition: all 0.5s ease-in;
+        }
+        table a:hover{
+            color: dodgerblue;
+            background-color: black;
+            border: 5px double dodgerblue;
+            border-radius: 10px;
+            padding: 10px;
+            font-style: italic;
+            font-size: 26px;
+        }
+        .dolje{
+            width: 1000px;
+            height: 1700px;
+            margin: 0px 50px;
+            background-color: rgb(90, 1, 1);
+            padding: 50px;
+            
+        }
+        h2{
+            color:black;
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: lightcoral  ;
+        }
+        .sp{
+            border: 3px solid lightcoral;
+            margin-top: 30px;
+        }
+        .sp p{
+            font-family: sans-serif;
+            color: lightyellow;
+            text-align: justify;
+            margin: 15px;
+            font-size: 18px;
+        }
+        .kul{
+            border: 3px solid lightcoral;
+            margin-top: 30px;
+        }
+        .kul p{
+            font-family: sans-serif;
+            color: lightyellow;
+            text-align: justify;
+            margin: 15px;
+            font-size: 18px;
+        }
+        .savjet{
+            border: 3px solid lightcoral;
+            margin-top: 30px;
+        }
+        .savjet p{
+            font-family: sans-serif;
+            color: lightyellow;
+            text-align: justify;
+            margin: 15px;
+            font-size: 18px;
+        }
+        .udr{
+            border: 3px solid lightcoral;
+            margin-top: 30px;
+        }
+        .udr p{
+            font-family: sans-serif;
+            color: lightyellow;
+            text-align: justify;
+            margin: 15px;
+            font-size: 18px;
+        }
+        .era{
+            border: 3px solid lightcoral;
+            margin-top: 30px;
+        }
+        .era p{
+            font-family: sans-serif;
+            color: lightyellow;
+            text-align: justify;
+            margin: 15px;
+            font-size: 18px;
+        }
+        .idigore{
+            
+            background-color: lightcoral;
+            font-size: 24px;
+            text-align: right;
+            padding-right: 15px;
+            font-family: sans-serif;
+            
+        }
+        .idigore a{
+            text-decoration: none;
+            color:lightyellow;
+            transition: all 1s ease-in-out;
+            font-weight: bold;
+            
+        }
+        .idigore a:hover{
+            font-size: 32px;
+            color: black;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        .prva img{
+            margin-top: 35px;
+            
+            width: 200px;
+            float: left;
+            border: 5px double dodgerblue;
+        }
+        .prva img:hover{
+            border: 5px dashed lightcoral;
+            border-radius: 15px;
+            transform: scale(1.1)
+        }
+
+        .druga img{
+            margin-top: 35px;
+            
+            width: 200px;
+            float: right;
+            border: 5px double dodgerblue;
+        }
+        .druga img:hover{
+            border: 5px dashed lightcoral;
+            border-radius: 15px;
+            transform: scale(1.1)
+        }
+        .treca img{
+            margin-top: 35px;
+            margin-left: 35px;
+            width: 502px;
+            vertical-align: text-top;
+            border: 5px double dodgerblue;
+        }
+        .treca img:hover{
+            border: 5px dashed lightcoral;
+            border-radius: 15px;
+            transform: scale(1.1)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p><a id="vrh"></a></p>
+
+        <div class="studenti">
+            <a href="../index.html"><img src="../slike/cropped-Logo-sm.png" alt=""></a>
+            
+            <h1 style="text-align: left;">Studenti</h1>
+        </div>  
+        <table>
+            <th><a href="#sport">VERN' Sport</a></th>
+            <th><a href="#kultura">VERN' Kultura</a></th>
+            <th><a href="#savjetovaliste">Savjetovalište za studente</a></th>
+            <th><a href="#udruga">Udruga studenata</a></th>
+            <th><a href="#erasmus">Erasmus</a></th>
+        </table>
+
+    </div>
+    <div class="dolje">
+        <div class="sp">
+            <h2><a id="sport">VERN' Sport</a></h2>
+            <img style="float: right; width: 115px; border: 5px solid lightcoral; margin-top: -5px;margin-left: 10px;margin-right: -3px;" src="../slike/vern-sport.png" alt="">
+            <img style="float: left; width: 245px; border: 5px solid lightcoral; margin-top: -5px;margin-right: 10px;" src="../slike/vern-sport-opca-1080px.jpg" alt="">
+            <p>Sveučilište VERN’ poziva sve svoje studente da sudjeluju u mnogobrojnim sportskim aktivnostima poput futsala, košarke, odbojke, rukometa, plivanja, fitnessa i mnogih drugih. Uz mogućnost bavljenja sportom rekreativno, VERN’ ima i velik broj momčadi koje se natječu na profesionalnoj razini u muškim i ženskim kategorijama.</p>
+            <p>Samo u posljednje tri godine VERN’ove sportske momčadi su osvojile 29 brončanih, 21 srebrnu i čak 24 zlatne medalje na državnim i međunarodnim sveučilišnim natjecanjima.</p>
+            <p>Kroz program VERN’sport i ove godine je omogućeno besplatno korištenje usluga u fitness centrima.</p>
+            
+        </div>
+
+        <div class="idigore">
+            <p><a href="#vrh">Povratak na vrh</a></p>
+        </div>
+
+        <div class="kul">
+            <h2><a id="kultura">VERN' Kultura</a></h2>
+            <p>VERN’ Kultura nudi svim studentima i djelatnicima Sveučilišta VERN’ mogućnost dobivanja ulaznica za mnoge kazališne predstave i glazbene koncerte u institucijama poput Hrvatskog narodnog kazališta u Zagrebu, Zagrebačkog kazališta mladih, Koncertne dvorane Vatroslav Lisinski, Gradskog dramskog kazališta Gavella i još mnogih drugih.</p>
+        </div>
+
+        <div class="idigore">
+            <p><a href="#vrh">Povratak na vrh</a></p>
+        </div>
+
+        <div class="savjet">
+            <h2><a id="savjetovaliste">Savjetovalište za studente</a></h2>
+            <p>Organizirana podrška studentima kroz radionice, predavanja, vježbaonice, peer grupe, gostujuća predavanja te grupna i individualna savjetovanja.</p>
+        </div>
+
+        <div class="idigore">
+            <p><a href="#vrh">Povratak na vrh</a></p>
+        </div>
+
+        <div class="prva">
+            <img src="../slike/thumb.jpg" alt="">
+        </div>
+
+        <div class="druga">
+            <img src="../slike/BRUCOSNIK-prirucnik.jpg" alt="">
+        </div>
+
+        <div class="treca">
+            <img src="../slike/P82-prostor-26-1-2021-20.jpg" alt="">
+        </div>
+
+        <div class="udr">
+            <h2><a id="udruga">Udruga studenata</a></h2>
+            <img  style="float: left; width: 375px; border: 5px solid lightcoral; margin-top: -5px;margin-right: 10px;" src="../slike/usv.jpg" alt="">
+            <p>Udruga studenata VERN’a poziva sve studente da se pridruže udruzi i aktivnim sudjelovanjem ostvaruju dodatnu vrijednost u svojem obrazovanju. Cilj udruge je povezati studente sa svih VERN’ovih studija i omogućiti im razmjenu iskustava i ideja.</p>
+            <p>Udruga sudjeluje u organizaciji i izvedbi mnogih projekata, seminara i radionica te studenti na taj način usvajaju potrebne vještine i znanja, ali stječu i mnoga poznanstva za budući profesionalni razvoj. Uz razna formalna događanja, Udruga organizira brojne tulume, između ostalog i poznate VERN’ove brucošijade!</p>
+        </div>
+        
+        <div class="idigore">
+            <p><a href="#vrh">Povratak na vrh</a></p>
+        </div>
+        
+        
+
+        <div class="era">
+            <h2><a id="erasmus">Erasmus</a></h2>
+            <p>Erasmus+ program Europske unije nudi studentima mogućnost studijskog boravka ili obavljanja stručne prakse u mnogim međunarodnim sveučilištima i veleučilištima, poduzećima, istraživačkim centrima ili drugim institucijama s kojima je Sveučilište VERN’ razvilo suradnju od kada sudjeluje u Erasmus programu.</p>
+            <p>Uz mogućnost studiranja i življenja u međunarodnom okruženju, naši studenti stječu vrijedno međunarodno i multikulturalno iskustvo te razvijaju svoje mogućnosti i vještine za prilagodbu tržišnim zahtjevima na globalnom tržištu. Istovremeno, ECTS sustav omogućava jednostavnije prihvaćanje mobilnosti i transfer bodova stečenih tijekom studijskog boravka u inozemstvu.</p>
+        </div>
+
+        <div class="idigore">
+            <p><a href="#vrh">Povratak na vrh</a></p>
+        </div>
+
+    </div>
+</body>
+</html>

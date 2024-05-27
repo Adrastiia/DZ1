@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ - Vern</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1000px;
+            height: 150px;
+            margin: 50px 50px 0px 50px;
+            background-color: rgb(90, 1, 1);
+            padding: 50px;
+            
+        }
+        .Vern{
+            
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: sans-serif;
+            width: 800px;
+            margin-left: 100px;   
+        }
+        .Vern img{
+            float: left;
+            width: 350px;
+            
+            margin: 0px 30px;
+            padding: 10px;
+        }
+        .Vern:hover{
+            transform: scale(1.2,1.2);
+            border: 5px double dodgerblue;
+            border-radius: 50px;
+            padding: 10px 0px 25px 20px;
+            
+        }
+        ul{
+            margin-top: 15px;
+        }
+        li{
+            margin: 10px;
+            list-style-type:none;
+        }
+        li a{
+            color: lightyellow;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 32px;
+            transition: all 1s ease-in-out;
+        }
+        ul li a:hover{
+            color:dodgerblue;
+            font-size: 40px;
+            font-style: italic;
+            background-color: black;
+            border: 2px double dodgerblue;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .sredina{
+            width: 1000px;
+            height: 930px;
+            margin: 0px 50px;
+            background-color: rgb(90, 1, 1);
+            padding: 50px;
+            background-image: url("slike/P82-prostor-26-1-2021-20.jpg");
+            background-blend-mode: darken;  
+            background-repeat: no-repeat; 
+        }
+        h2{
+            color:black;
+            font-family: sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            background-color: lightcoral  ;
+        }
+        .overnu{
+            border: 3px solid lightcoral;
+            margin-top: 60px;
+        }
+        .overnu p{
+            font-family: sans-serif;
+            color: lightyellow;
+            text-align: justify;
+            margin: 15px;
+            font-size: 18px;
+        }
+        
+        .skrozdolje{
+            width: 1000px;
+            height: 600px;
+            margin: 0px 50px;
+            padding: 50px;
+            background-color: rgb(90, 1, 1);
+            background-image: url("slike/P82-prostor-26-1-2021-20.jpg");
+            background-blend-mode: darken;  
+            background-repeat: no-repeat; 
+        }
+        .kontakti{
+            border: 3px solid lightcoral;
+            margin-top: 15px;
+        }
+        .kontakti p{
+            font-family: sans-serif;
+            color: white;
+            text-align: left;
+            margin: 15px;
+            font-size: 18px;
+            line-height: 10px;
+        }
+        .idigore{
+            
+            background-color: lightcoral;
+            font-size: 24px;
+            
+            text-align: right;
+            padding-right: 15px;
+            font-family: sans-serif;
+            
+        }
+        .idigore a{
+            text-decoration: none;
+            color:lightyellow;
+            transition: all 1s ease-in-out;
+            font-weight: bold;
+            
+        }
+        .idigore a:hover{
+            font-size: 32px;
+            color: black;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        .prva img{
+            float: right;
+            width: 285px;
+            border: 5px solid lightcoral;
+        }
+        .prva img:hover{
+            border: 10px double dodgerblue;
+            transform: rotateZ(-40deg);
+            
+        }
+        .druga img{
+            float: right;
+            width: 300px;
+            border: 5px solid lightcoral;
+            margin-left: 20px;
+        }
+        .druga img:hover{
+            border: 10px double dodgerblue;
+            transform: rotateZ(40deg);
+        }
+        .kont1 p{
+            text-align: center;
+            font-weight: bold;
+        }
+        .dolje{
+            width: 1000px;
+            height: 950px;
+            margin: 0px 50px;
+            padding: 50px;
+            background-color: rgb(90, 1, 1);
+        }   
+        .studiji{
+            border: 3px solid lightcoral;
+            margin-top: 15px;
+        }
+        .studiji li{
+            list-style-type: disc;
+            margin-left: 480px;
+            color: lightyellow;
+            font-family: sans-serif;
+            font-size: 18px;
+            line-height: 20pxpx;
+        }
+        .studiji p{
+            color: lightyellow;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-left: 430px;
+            font-style: italic;
+            font-size: 24px;
+        }
+        .treca img{
+            float: left;
+            width: 389px;
+            border: 5px solid lightcoral;
+            margin-top: -20px;
+            
+        }
+        .treca img:hover{
+            border: 10px double dodgerblue;
+        }
+        .cetvrta img{
+            margin-top: 50px;
+            float:left;
+            border: 5px double dodgerblue;
+        }
+        .cetvrta img:hover{
+            border: 5px dashed lightcoral;
+            border-radius: 15px;
+            transform: scale(1.2)
+        }
+        .peta img{
+            margin-top: 50px;
+            width: 300px;
+            float:right;
+            border: 5px double dodgerblue;
+        }
+        .peta img:hover{
+            border: 5px dashed lightcoral;
+            border-radius: 15px;
+            transform: scale(1.2)
+        }
+        .sesta img{
+            margin-top: 50px;
+            margin-left: 37px;
+            width: 300px;
+            float:center;
+            border: 5px double dodgerblue;
+        }
+        .sesta img:hover{
+            border: 5px dashed lightcoral;
+            border-radius: 15px;
+            transform: scale(1.2)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="Vern">
+            <img src="slike/VERN_logo_LOW_RES.jpg" alt="">
+            <h1 style="text-align: left;">INOVATIVNO I PODUZETNIČKO SVEUČILIŠTE</h1>
+        </div>  
+    
+    </div>
+    <div class="sredina">
+        <p><a id="vrh"></a></p>
+        
+        <ul>
+            <div class="druga">
+                <img src="slike/09aeab3d-53b0-4e5d-a8eb-0715f454f6bc.jpg" alt="">
+            </div>
+            <div class="prva">
+                <img src="slike/a62264a5915f016f2dd7.jpeg" alt="">
+            </div> 
+            <li><a href="#oVernu">O Vernu</a></li>
+            <li><a href="#Studiji">Studiji</a></li>
+            <li><a href="Studenti/Studenti.html">Studenti</a></li>
+            <li><a href="#Kontakti">Kontakti</a></li> 
+            
+        </ul>
+
+        <div class="overnu">
+            <h2><a id="oVernu">O Vern'u</a></h2>
+            <p style="font-weight: bold; font-size: 24px;color: lightgoldenrodyellow;">Povijest</p>
+            <p>VERN’ je osnovan <span style="font-weight: bold;color: lightsalmon;">1990. godine</span>, a Veleučilište VERN’ je kao visokoobrazovna institucija pod imenom Visoke škole za ekonomiju poduzetništva s pravom javnosti počelo djelovati 2000. godine na temelju dopusnice i rješenja Ministarstva znanosti i tehnologije RH.</p>
+            <p>Kao prvo hrvatsko privatno poslovno visoko učilište VERN’ je svoju akademsku egzistenciju započeo stručnim studijem Ekonomije poduzetništva koji i danas predstavlja okosnicu VERN’ovih preddiplomskih studijskih programa i poslovne kulture koju promiču VERN’ovi obrazovni programi.</p>
+            <p style="font-weight: bold; font-size: 24px;color: lightgoldenrodyellow;">Primjenjiva znanja</p>
+            <p>VERN’ov ciljani proizvod je preneseno znanje, preciznije rečeno znanje visoke upotrebne vrijednosti u poslovnoj praksi, tj. biznisu. To su primjenjive multidisciplinarne poslovne vještine utemeljene na ekonomskim, pravnim, komunikacijskim i drugim teorijama od bitnog značaja za poslovnu praksu, koje se stječu interaktivnim studiranjem na jednom od 8 preddiplomskih, 6 diplomskih studija i 1 poslijediplomskom (doktorskom) studiju, kroz problemski koncipiranu nastavu u malim studijskim grupama.</p>
+            <p style="font-weight: bold; font-size: 24px;color: lightgoldenrodyellow;">Vizija</p>
+            <p style="font-weight: bold;font-style: italic; text-align: center;color: lightsalmon;">Obrazovani, poduzetni i društveno odgovorni ljudi nositelji su održivog razvoja i blagostanja zajednice</p>
+            <p style="font-weight: bold; font-size: 24px;color: lightgoldenrodyellow;">Misija</p>
+            <p style="font-weight: bold;font-style: italic; text-align: center; color: lightsalmon;">Akademskom izvrsnošću i društveno odgovornim poduzetničkim djelovanjem razvijamo kompetencije stručnosti, poduzetnosti i poslovnosti kroz interakciju, ispunjenje i zadovoljstvo</p>
+        </div>
+
+        <div class="idigore">
+            <p><a href="#vrh">Povratak na vrh</a></p>
+        </div>
+
+    </div>
+
+    <div class="dolje">
+        <div class="studiji">
+            <h2><a id="Studiji">Studiji</a></h2>
+            <ul>
+                <div class="treca">
+                    <img src="slike/page.jpg" alt="">
+                </div>
+                <p>Prijediplomski studiji</p>
+                <li>Ekonomija poduzetništva</li>
+                <li>Turizam – turistički i hotelski menadžment</li>
+                <li>Filmsko, televizijsko i multimedijsko oblikovanje</li>
+                <li>Transmedijska dramaturgija</li>
+                <li>Cyber komunikacije i znanost o mreži</li>
+                <li>Odnosi s javnošću i studij medija</li>
+                <li>Novinarstvo</li>
+                <li>Internet stvari (Internet of Things – IoT)</li>
+                <li>Poslovna informatika</li>
+                <li>Tehnički menadžment</li>
+                <p>Diplomski studiji</p>
+                <li>IT menadžment</li>
+                <li>Filmska i televizijska režija i produkcija</li>
+                <li>Menadžment održivog razvoja turizma</li>
+                <li>Poduzetnički menadžment</li>
+                <li>Računovodstvo i financije</li>
+                <li>Upravljanje ljudskim potencijalima</li>
+                <li style="margin-bottom: 20px;">Upravljanje poslovnim komunikacijama</li>
+            </ul>
+        </div>
+        <div class="idigore">
+            <p><a href="#vrh">Povratak na vrh</a></p>
+        </div>
+        <div class="cetvrta">
+            <img src="slike/preuzimanje.jpg" alt="">
+        </div>
+        <div class="peta">
+            <img src="slike/P82-prostor-26-1-2021-16.jpg" alt="">
+        </div>
+        <div class="sesta">
+            <img src="slike/P82-prostor-26-1-2021-2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="skrozdolje">
+        <div class="kontakti">
+            <h2><a id="Kontakti"><img style="width: 120px; float: right;" src="slike/Contact-Us.png" alt="">Kontakti</a></h2>
+            <div class="kont1">
+                <p>Adresa: Palmotićeva ulica 82/1, 10000 Zagreb</p>
+                <p>Telefon: +385 (0)1 48 81 820</p>
+                <p>OIB: 22341026596</p>
+            </div>
+            <p style="font-weight: bold;line-height: 20px;font-size: 20px;">Odjel za komunikacije</p>
+            <p>Telefon: 091 48 25 003</p>
+            <p>E-mail: upisi@vern.hr</p>
+            <p>Radno vrijeme: pon-pet 9-17h</p>
+            <p style="font-weight: bold;line-height: 20px;font-size: 20px;">Knjižnica</p>
+            <p>Telefon: 01 48 81 828</p>
+            <p>E-mail: knjiznica@vern.hr</p>
+            <p>Radno vrijeme: pon-pet 11-17h</p>
+            <p style="font-weight: bold;line-height: 20px;font-size: 20px;">Recepcija</p>
+            <p>Telefon: 01 48 81 839</p>
+            <p style="font-weight: bold;line-height: 20px;font-size: 20px;">Referada</p>
+            <p>Telefon: 01 48 81 821</p>
+            <p>Telefon: 01 48 81 821</p>
+            <p>Radno vrijeme: pon, sri, pet 9-17h; uto, čet 10-18h</p>
+        </div>
+
+        <div class="idigore">
+            <p><a href="#vrh">Povratak na vrh</a></p>
+        </div>
+    </div>
+</body>
+</html>
